@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <style>
+    .chicken {
+           
+    background-image: url(http://imgnews.naver.net/image/5097/2020/01/13/382427_296510_5546_20200113100028116.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 650px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 20px auto 0 auto;
+    margin-bottom: 20px;
+    }
+    .form-style-5{
+      max-width: 700px;
+      padding: 10px 20px;
+      background: #f4f7f8;
+      margin: 10px auto;      
+      border-radius: 8px;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    .form-style-5 fieldset{
+      border: none;
+    }
+    .form-style-5 legend {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+    .form-style-5 label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .form-style-5 input[type="text"],
+ 
+   
+    .form-style-5 select {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: rgba(255,255,255,.1);
+      border: none;
+      border-radius: 4px;
+      font-size: 15px;
+      margin: 0;
+      outline: 0;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box; 
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box; 
+      background-color: #e8eeef;
+      color:#8a97a0;
+      -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+    .form-style-5 input[type="text"]:focus,
+    
+   
+    .form-style-5 select:focus{
+      background: #d2d9dd;
+    }
+    .form-style-5 select{
+      -webkit-appearance: menulist-button;
+      height:40px;
+    }
+    .form-style-5 .number {
+      background: #1abc9c;
+      color: #fff;
+      height: 30px;
+      width: 60px;
+      display: inline-block;
+      font-size: 0.8em;
+      margin-right: 4px;
+      line-height: 30px;
+      text-align: center;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+      border-radius: 15px 15px 15px 15px;
+    }
+    
+    
+    .form-style-5 button
+    {
+      
+      display: block;
+      padding: 19px 39px 18px 39px;
+      color: #FFF;
+      margin: 0 auto;
+      background: #1abc9c;
+      font-size: 18px;
+      text-align: center;
+      font-style: normal;
+      width: 30%;
+      border: 1px solid #16a085;
+      border-width: 1px 1px 3px;
+      margin-bottom: 10px;
+    }
+    
+    .form-style-5 button:hover
+    {
+      background: #109177;
+    }
+    .price{font-size: 15px;
+           }
+    
+   </style>
+    
+    <script>
+     function q1() {
+            let txt= $('#input-q1').val();
+            if (txt== '') {
+                alert('주문자 이름을입력하세요!');
+                $("#input-q1").focus();
+            } else {
+                alert('주소를 입력해주세요!');
+            }
+        }
+        
+         
+     
+     </script>
+       
+</head>
+<body>
+  
+  <div class="form-style-5">
+    <div class="chicken">
+    </div>
+    <form>
+    <fieldset>
+    <legend><span class="number">메뉴</span> 스파르타치킨 <span class="price">가격: 20,000원</span></legend>
+    <span>이번에 개발한 스파르타 치킨입니다. 바삭바삭한 치킨의 식감을 여러분도 느껴보세요.</span>
+    
+    <input id="input-q1" type="text" placeholder="주문자 이름 *" name="field1">
+    <input id="input-q2" type="text" placeholder="주소 *" name="field2">
+    <input id="input-q3" type="text" placeholder="전화번호 *" name="field3">
+    <label for="수량">수량</label>
+    <select id="수량" name="field4">
+    <optgroup label="수량">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+    </optgroup>
+   
+    </select>      
+    </fieldset>
+   
+    <button onclick="q1()">주문하기</button>
+    </form>
+    </div>
+  
+</body>
+</html>
